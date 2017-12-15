@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
+import * as moment from 'moment';
 
 /**
  * TickTockService class.
@@ -45,5 +46,9 @@ export class TickTockService {
     return Observable
       .timer(0, this.TIMEOUT)
       .map((tick) => TickTockService.getNowString());
+  }
+
+  public momentTime(): Observable<string> {
+    return Observable.of(moment().format('LLLL'));
   }
 }

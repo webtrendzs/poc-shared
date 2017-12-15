@@ -1,5 +1,5 @@
 {
-  "name": "angular-library-seed",
+  "name": "poc-shared",
   "version": "0.0.20",
   "description": "Angular library seed",
   "main": "./dist/index.umd.js",
@@ -56,7 +56,9 @@
     "test:watch": "karma start --auto-watch --no-single-run",
     "tslint": "tslint"
   },
-  "dependencies": {},
+  "dependencies": {
+    "moment": "^2.19.4"
+  },
   "peerDependencies": {
     "@angular/common": "^4.0.0",
     "@angular/core": "^4.0.0"
